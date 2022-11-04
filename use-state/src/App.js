@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 
 function App() {
+	const [count, setCount] = useState(0);
+
+	const decrementCount = () => {
+		setCount(count - 1);
+	};
+
+	const incrementCount = () => {
+		setCount(count + 1);
+	};
+
 	return (
 		<>
-			<button>-</button>
-			<span>0</span>
-			<button>+</button>
+			<button onClick={decrementCount}>-</button>
+			<span>{count}</span>
+			<button onClick={incrementCount}>+</button>
 		</>
 	);
 }

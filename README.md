@@ -21,3 +21,21 @@ Small React Projects
 -   Complex UI logic
 -   Provide lifesicle hooks
 -   Stateful / Dumb / Presentational
+
+###### Props VS State
+
+**Props**
+
+-   props get passed to the component
+-   Function parameters
+-   props are immutable
+    In Functional Components - props
+    In Class Components - this.prop
+
+**State**
+
+-   state is managed within the component
+-   Variables declared in the function body
+-   state can be changed
+    In Functional Components - useState Hook
+    In Class Components - this.state

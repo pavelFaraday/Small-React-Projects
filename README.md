@@ -39,3 +39,7 @@ Small React Projects
 -   state can be changed
     In Functional Components - useState Hook
     In Class Components - this.state
+
+    ###### props.children
+
+    props.children works just like any other prop in that it can pass any sort of data, not just the sorts that React knows how to render. Children passed to a custom component can be anything, as long as that component transforms them into something React can understand before rendering.

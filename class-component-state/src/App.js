@@ -7,7 +7,7 @@ import Greet from "./components/Greet";
 function App() {
 	return (
 		<>
-			<Welcome />
+			<Welcome name="Jemala" heroName="superLobio" />
 			<Message />
 			<Counter />
 			<Greet name="Anzora" heroName="superbarana" />

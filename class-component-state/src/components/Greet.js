@@ -1,10 +1,10 @@
 import React from "react";
 
-const Greet = (props) => {
+const Greet = ({ name, heroName }) => {
 	return (
 		<>
 			<h1>
-				Hello {props.name}, I am {props.heroName}
+				Hello {name}, I am {heroName}
 			</h1>
 		</>
 	);

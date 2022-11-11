@@ -7,6 +7,10 @@ class EventBind extends Component {
 		this.state = {
 			message: "Hello",
 		};
+
+		// The Best option with event binding
+		this.changeText = this.changeText.bind(this);
+		this.changeTextBack = this.changeTextBack.bind(this);
 	}
 
 	changeText() {
@@ -16,11 +20,19 @@ class EventBind extends Component {
 		console.log(this);
 	}
 
+	changeTextBack() {
+		this.setState({
+			message: "Hello",
+		});
+		console.log(this);
+	}
+
 	render() {
 		return (
 			<div>
 				<h1>{this.state.message}</h1>
-				<button onClick={() => this.changeText()}>Click</button>
+				<button onClick={this.changeText}>Click</button>
+				<button onClick={this.changeTextBack}>Roll Back</button>
 			</div>
 		);
 	}

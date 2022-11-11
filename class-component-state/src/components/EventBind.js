@@ -10,7 +10,6 @@ class EventBind extends Component {
 
 		// The Best option with event binding
 		this.changeText = this.changeText.bind(this);
-		this.changeTextBack = this.changeTextBack.bind(this);
 	}
 
 	changeText() {
@@ -20,12 +19,12 @@ class EventBind extends Component {
 		console.log(this);
 	}
 
-	changeTextBack() {
+	changeTextBack = () => {
 		this.setState({
 			message: "Hello",
 		});
 		console.log(this);
-	}
+	};
 
 	render() {
 		return (

@@ -60,5 +60,16 @@ constructor(props) {
 }
 
 <button onClick={this.changeText}>Click</button>
+```
 
+-   V4:
+
+```
+changeText = () => {
+    this.setState({
+        message: "Hello",
+    });
+};
+
+<button onClick={this.changeText}>Click</button>
 ```

@@ -5,16 +5,18 @@ import Counter from "./components/Counter";
 import Greet from "./components/Greet";
 import FunctionClick from "./components/FunctionClick";
 import ClassClick from "./components/ClassClick";
+import EventBind from "./components/EventBind";
 
 function App() {
 	return (
 		<>
-			<Welcome name="Jemala" heroName="superLobio" />
+			{/* <Welcome name="Jemala" heroName="superLobio" />
 			<Message />
 			<Counter />
 			<Greet name="Anzora" heroName="superbarana" />
 			<FunctionClick />
-			<ClassClick />
+			<ClassClick /> */}
+			<EventBind />
 		</>
 	);
 }

@@ -9,22 +9,17 @@ class UserGreeting extends Component {
 		};
 	}
 
-	// * Conditional Rendering - Element Variables
+	// * Conditional Rendering - Ternary Operator
 
 	render() {
-		let message;
-		if (this.state.isLoggedIn) {
-			message = (
-				<div>
-					<h1>Hello John</h1>
-					<p>How are You?</p>
-				</div>
-			);
-		} else {
-			message = <div>Hello Guest</div>;
-		}
-
-		return <div>{message}</div>;
+		return this.state.isLoggedIn ? (
+			<>
+				<h1>Hello John</h1>
+				<h2>How are you? </h2>
+			</>
+		) : (
+			<div>Hello Guest</div>
+		);
 	}
 }
 

@@ -9,16 +9,17 @@ class UserGreeting extends Component {
 		};
 	}
 
-	// * Conditional Rendering - Ternary Operator
+	// * Conditional Rendering - Short Circuit Operator
+	// ! use this approach when u want render something or nothing
 
 	render() {
-		return this.state.isLoggedIn ? (
-			<>
-				<h1>Hello John</h1>
-				<h2>How are you? </h2>
-			</>
-		) : (
-			<div>Hello Guest</div>
+		return (
+			this.state.isLoggedIn && (
+				<div>
+					<h1>Hello Tbilisi</h1>
+					<h2>Hello Abudabi</h2>
+				</div>
+			)
 		);
 	}
 }

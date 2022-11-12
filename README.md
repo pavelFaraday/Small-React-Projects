@@ -44,7 +44,7 @@ Small React Projects
 
     props.children works just like any other prop in that it can pass any sort of data, not just the sorts that React knows how to render. Children passed to a custom component can be anything, as long as that component transforms them into something React can understand before rendering.
 
-**Event Binding with "this"**
+###### Event Binding with "this"
 
 -   V1
     `<button onClick={this.changeText.bind(this)}>Click</button>`
@@ -73,3 +73,10 @@ changeText = () => {
 
 <button onClick={this.changeText}>Click</button>
 ```
+
+###### Conditional Rendering
+
+-   if/else
+-   Element Variables
+-   Ternary Conditional Operator
+-   Short Circuit Operator

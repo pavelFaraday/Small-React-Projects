@@ -1,4 +1,5 @@
 import React from "react";
+import "./app.css";
 import Welcome from "./components/Welcome";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
@@ -8,7 +9,7 @@ import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
-import "./app.css";
+import NameList from "./components/NameList";
 
 function App() {
 	return (
@@ -20,8 +21,10 @@ function App() {
 			<FunctionClick />
 			<ClassClick /> 
 			<EventBind /> 
-			<ParentComponent /> */}
-			<UserGreeting />
+			<ParentComponent /> 
+			<UserGreeting /> */}
+
+			<NameList />
 		</div>
 	);
 }

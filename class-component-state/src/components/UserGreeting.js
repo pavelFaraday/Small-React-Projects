@@ -9,17 +9,22 @@ class UserGreeting extends Component {
 		};
 	}
 
+	// * Conditional Rendering - Element Variables
+
 	render() {
+		let message;
 		if (this.state.isLoggedIn) {
-			return (
+			message = (
 				<div>
 					<h1>Hello John</h1>
-					<p>idi na more putin</p>
+					<p>How are You?</p>
 				</div>
 			);
 		} else {
-			return <h1>Hello She Chema</h1>;
+			message = <div>Hello Guest</div>;
 		}
+
+		return <div>{message}</div>;
 	}
 }
 

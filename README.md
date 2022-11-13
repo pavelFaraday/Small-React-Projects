@@ -91,3 +91,11 @@ changeText = () => {
 ```
 key={list.id}
 ```
+
+**When to use index as a key?**
+
+`const nameList = names.map((name, index) => <h1 key={index}>{name}</h1>);`
+
+1. The items in your list do not have a unique id.
+2. The list is a static list and will not change.
+3. The list will never be reordered or filtered.

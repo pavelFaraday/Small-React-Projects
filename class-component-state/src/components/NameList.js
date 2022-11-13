@@ -6,7 +6,9 @@ function NameList() {
 		{ id: 1, age: 23, name: "Luist", skill: "SuperMen" },
 		{ id: 2, age: 78, name: "John", skill: "Xmen" },
 	];
-	const personList = persons.map((person) => <Person human={person} />);
+	const personList = persons.map((person) => (
+		<Person key={person.id} human={person} />
+	));
 	return <div>{personList}</div>;
 }
 

@@ -83,7 +83,10 @@ changeText = () => {
 
 ###### Keys & Lists
 
-A "key" is a special string attribute you need to include when creating lists of elements.
+-   A "key" is a special string attribute you need to include when creating lists of elements.
+-   Keys give the elements a stable identity.
+-   Keys help React identify which items have changed, are added, or are removed.
+-   Help in efficient update of the user interface.
 
 ```
 key={list.id}

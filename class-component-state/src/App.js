@@ -10,8 +10,9 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import Stylesheet from "./components/Stylesheet";
 
-function App() {
+function App(props) {
 	return (
 		<div className="center">
 			{/* <Welcome name="Jemala" heroName="superLobio" />
@@ -22,9 +23,9 @@ function App() {
 			<ClassClick /> 
 			<EventBind /> 
 			<ParentComponent /> 
-			<UserGreeting /> */}
-
-			<NameList />
+			<UserGreeting /> 
+			<NameList />*/}
+			<Stylesheet primary={true} />
 		</div>
 	);
 }

@@ -11,6 +11,7 @@ import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
 
 function App(props) {
 	return (
@@ -26,6 +27,7 @@ function App(props) {
 			<UserGreeting /> 
 			<NameList />*/}
 			<Stylesheet primary={true} />
+			<Inline />
 		</div>
 	);
 }

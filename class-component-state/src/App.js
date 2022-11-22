@@ -12,10 +12,14 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/Inline";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 function App(props) {
 	return (
 		<div className="center">
+			<h1 className="error">Errorsss</h1>
+			<h1 className={styles.success}>Success</h1>
 			{/* <Welcome name="Jemala" heroName="superLobio" />
 			<Message />
 			<Counter />

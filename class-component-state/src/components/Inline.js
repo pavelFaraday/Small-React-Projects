@@ -9,6 +9,7 @@ const Inline = (props) => {
 	return (
 		<div>
 			<h1 style={heading}>Inline</h1>
+			{/* every child component with classnames have inline scope  */}
 		</div>
 	);
 };
